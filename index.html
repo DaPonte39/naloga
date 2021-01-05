@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vnosna forma</title>
+    <script type="text/javascript" src="javascript.js"></script>
+</head>
+<body>
+    <form onsubmit="sprejmi()">
+        <input id="Ime" type="text" placeholder="Vnesi ime" maxlength="35" required><br>
+        <input id="Priimek" type="text" placeholder="Vnesi priimek" maxlength="35" required><br>
+        <input id="Naslov" type="text" placeholder="Vnesi ulico in hisno stevilko" maxlength="35" required><br>
+        <input id="Posta_Stevilka" type="number" placeholder="Vnesi postno stevilko" min="1000" max="9999" required><br>
+        <input id="Posta_Naziv" type="text" placeholder="Vnesi naslov poste" maxlength="35" required><br>
+        <p>Vnesi datum rojstva</p>
+        <input id="Datum" type="date" required><br>
+
+        <select id="Spol" required>
+            <option disabled selected value="">-- Spol --</option>
+            <option value="M">Moški</option>
+            <option value="Z">Ženski</option>
+        </select><br>
+
+        <select id="Stopnja_Izobrazbe" required>
+            <option disabled selected value="">-- Izberi stopnjo izobrazbe --</option>
+            <option value="0">IV</option>
+            <option value="5">V</option>
+            <option value="10">VI</option>
+            <option value="15">VII</option>
+        </select><br>
+    
+        <legend>Dodatne izkušnje</legend>      
+        <input type="checkbox" name="Dodatna_Znanja" value="5">Programiranje<br>      
+        <input type="checkbox" name="Dodatna_Znanja" value="2">Oblikovanje<br>      
+        <input type="checkbox" name="Dodatna_Znanja" value="3">Načrtovanje<br>
+        <input type="checkbox" name="Dodatna_Znanja" value="1">Optimizacija<br>                      
+
+        <button id="Oddaj" type="submit" >Klikni me</button>
+    </form>
+</body>
+</html>
