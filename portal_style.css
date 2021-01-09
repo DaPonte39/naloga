@@ -1,0 +1,69 @@
+h1 {
+  font-family: TR2N;
+  font-size: 50px;
+  text-decoration: underline;
+  text-decoration-color: white;
+  text-decoration-style: solid;
+}
+
+body {
+  font-family: Consolas;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+}
+
+#Ime {
+  font-family: Consolas;
+  text-align: center;
+  font-size: 16px;
+}
+#Priimek {
+  font-family: Consolas;
+  text-align: center;
+  font-size: 16px;
+}
+#Naslov {
+  font-family: Consolas;
+  text-align: center;
+  font-size: 16px;
+}
+#Posta_Stevilka {
+  font-family: Consolas;
+  text-align: center;
+  font-size: 16px;
+}
+#Posta_Naziv {
+  font-family: Consolas;
+  text-align: center;
+  font-size: 16px;
+}
+#Datum {
+  font-family: Consolas;
+  text-align: center;
+  font-size: 16px;
+}
+#Spol {
+  font-family: Consolas;
+  font-size: 16px;
+}
+#Stopnja_Izobrazbe {
+  font-family: Consolas;
+  font-size: 14px;
+}
+
+button {
+  font-family: TR2N;
+  font-size: 40px;
+  background-color: white;
+  text-transform: uppercase;
+  margin-top: 25px;
+  border-width: 6px;
+  border-color: green;
+  border-radius: 25px;
+  color: black;
+}
+button:hover {
+  background-color: black;
+  color: green;
+}

@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="stylesheet" href="portal_style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vnosna forma</title>
     <script type="text/javascript" src="javascript.js"></script>
 </head>
 <body>
+  <style>
+  body {
+  background-image: url('hexagon.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1400px;
+}
+  </style>
+  <h1> TRON MODUL
+  </h1>
     <form onsubmit="sprejmi()">
-        <input id="Ime" type="text" placeholder="Vnesi ime" maxlength="35" required><br>
-        <input id="Priimek" type="text" placeholder="Vnesi priimek" maxlength="35" required><br>
-        <input id="Naslov" type="text" placeholder="Vnesi ulico in hisno stevilko" maxlength="35" required><br>
-        <input id="Posta_Stevilka" type="number" placeholder="Vnesi postno stevilko" min="1000" max="9999" required><br>
-        <input id="Posta_Naziv" type="text" placeholder="Vnesi naslov poste" maxlength="35" required><br>
+        <p> Vnesi osebne podatke</p>
+        <input id="Ime" type="text" placeholder="Ime" maxlength="35" required><br>
+        <input id="Priimek" type="text" placeholder="Priimek" maxlength="35" required><br>
+        <input id="Naslov" type="text" placeholder="Naslov" maxlength="35" required><br>
+        <input id="Posta_Stevilka" type="number" placeholder="Poštna št." min="1" max="888800000" required><br>
+        <input id="Posta_Naziv" type="text" placeholder="Naslov pošte" maxlength="35" required><br>
         <p>Vnesi datum rojstva</p>
         <input id="Datum" type="date" required><br>
 
@@ -24,19 +36,19 @@
 
         <select id="Stopnja_Izobrazbe" required>
             <option disabled selected value="">-- Izberi stopnjo izobrazbe --</option>
-            <option value="0">IV</option>
-            <option value="5">V</option>
-            <option value="10">VI</option>
-            <option value="15">VII</option>
+            <option value="0">IV.</option>
+            <option value="5">V.</option>
+            <option value="10">VI.</option>
+            <option value="15">VII.</option>
         </select><br>
-    
-        <legend>Dodatne izkušnje</legend>      
-        <input type="checkbox" name="Dodatna_Znanja" value="5">Programiranje<br>      
-        <input type="checkbox" name="Dodatna_Znanja" value="2">Oblikovanje<br>      
-        <input type="checkbox" name="Dodatna_Znanja" value="3">Načrtovanje<br>
-        <input type="checkbox" name="Dodatna_Znanja" value="1">Optimizacija<br>                      
 
-        <button id="Oddaj" type="submit" >Klikni me</button>
+        <p>Dodatne izkušnje</p>
+        <input type="checkbox" name="Dodatna_Znanja" value="5">Programiranje<br>
+        <input type="checkbox" name="Dodatna_Znanja" value="2">Oblikovanje<br>
+        <input type="checkbox" name="Dodatna_Znanja" value="3">Načrtovanje<br>
+        <input type="checkbox" name="Dodatna_Znanja" value="1">Optimizacija<br>
+
+        <button id="Oddaj" type="submit" >Oddaj</button>
     </form>
 </body>
 </html>
